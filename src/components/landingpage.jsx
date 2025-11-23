@@ -34,7 +34,7 @@ export default function LandingPage() {
         <div className="max-w-6xl mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
            
-            <span className={`font-semibold transition-colors ${scrolled ? 'text-gray-800' : 'text-gray-800'}`}>Khulla Malpot</span>
+            <span className={`font-semibold transition-colors ${scrolled ? 'text-white' : 'text-white'}`}>Khulla Malpot</span>
           </div>
           
           <div className="hidden md:flex items-center gap-6">
@@ -97,16 +97,16 @@ export default function LandingPage() {
           className="absolute inset-0 bg-cover bg-center "
           style={{ backgroundImage: "url(bg.jpg)" }}
         >
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-white"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/50"></div>
         </div>
         
         <div className={`relative z-10 text-center px-4 transition-all duration-1000 ${isVisible.hero ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-4 drop-shadow-lg">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">
             Khulla Malpot
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 mb-8">
-            Connecting land and water through transparency.
-          </p>
+          <p className="text-lg md:text-xl text-white/90 mb-8">
+             Connecting land and water through transparency.
+           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/login">
             <button className="bg-white text-gray-800 px-8 py-3 rounded-md font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-200">
