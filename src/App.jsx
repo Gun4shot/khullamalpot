@@ -6,6 +6,7 @@ import MyApplications from "./components/myapplication";
 import BookService from "./components/services";
 import PublicTransparencyPortal from "./components/publicportal";
 import LandTransferService from "./components/landtransfer";
+import ApplicationDetails from "./components/applicationdetail";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/bookservice" element={<BookService />} />
         <Route path="/publicportal" element={<PublicTransparencyPortal />} />
         <Route path="/bookservice/landtransfer" element={<LandTransferService />} />
+        <Route path="/myapplication/applicationdetails" element={<ApplicationDetails />} />
 
         
       </Routes> 

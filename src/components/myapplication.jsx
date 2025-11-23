@@ -16,9 +16,9 @@ export default function MyApplications() {
   ];
 
   const applications = [
-    { type: 'Property Ownership Transfer', id: 'LTS-2024-00123', date: '2024-07-15', status: 'approved' },
-    { type: 'Land Parcel Registration', id: 'LTS-2024-00122', date: '2024-07-12', status: 'rejected' },
-    { type: 'Ownership Certificate', id: 'LTS-2024-00121', date: '2024-07-10', status: 'review' },
+    { type: 'Property Ownership Transfer', id: 'LTS-2025-00123', date: '2025-11-23', status: 'approved' },
+    { type: 'Land Parcel Registration', id: 'LTS-2024-00122', date: '2025-07-12', status: 'rejected' },
+    { type: 'Ownership Certificate', id: 'LTS-2024-00121', date: '2024-11-22', status: 'review' },
     { type: 'Land Transfer', id: 'LTS-2024-00120', date: '2024-07-09', status: 'pending' },
     { type: 'Property Ownership Transfer', id: 'LTS-2024-00119', date: '2024-07-05', status: 'approved' },
   ];
@@ -76,10 +76,7 @@ export default function MyApplications() {
             <button className="md:hidden text-gray-600" onClick={() => setSidebarOpen(true)}>
               <Menu size={24} />
             </button>
-            <div className="hidden md:flex items-center gap-2">
-              <div className="w-8 h-8 bg-blue-900 rounded-lg flex items-center justify-center text-white text-xs">🏔</div>
-              <span className="font-semibold text-gray-900">Nepal Land Services</span>
-            </div>
+            
            
           </div>
           <div className="flex items-center gap-3">
@@ -166,7 +163,9 @@ export default function MyApplications() {
                         </span>
                       </td>
                       <td className="px-6 py-4">
+                        <Link to="/myapplication/applicationdetails">
                         <button className="text-sm text-blue-900 font-medium hover:underline">View Details</button>
+                        </Link>
                       </td>
                     </tr>
                   ))}
