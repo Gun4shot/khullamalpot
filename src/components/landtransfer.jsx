@@ -61,10 +61,7 @@ export default function LandTransferService() {
       {/* Transparency Stats Bar */}
       <div className="bg-blue-50 border-b border-blue-100 px-4 md:px-8 py-3">
         <div className="max-w-5xl mx-auto flex flex-wrap items-center gap-4 md:gap-8 text-sm">
-          <div className="flex items-center gap-2 text-blue-900">
-            <Clock size={16} />
-            <span>Avg. processing time in your district: <strong>36 hours</strong></span>
-          </div>
+          
           <div className="flex items-center gap-2 text-blue-900">
             <Users size={16} />
             <span>Officer workload today: <strong>78 cases processed</strong></span>
